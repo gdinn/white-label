@@ -60,6 +60,56 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "mercado-pedro": {
+              "fileReplacements": [
+                {
+                  "replace": "./src/environments/environment.ts",
+                  "with": "./src/environments/environment.mercado-pedro.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "./src/environments/mercado-pedro/styles"
+                ]
+              },
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "./src/assets",
+                  "output": "/assets"
+                },
+                { 
+                  "glob": "**/*", 
+                  "input": "./src/environments/mercado-pedro/assets", 
+                  "output": "assets/" 
+                }
+              ]
+            },
+            "mercado-luiz": {
+              "fileReplacements": [
+                {
+                  "replace": "./src/environments/environment.ts",
+                  "with": "./src/environments/environment.mercado-luiz.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "./src/environments/mercado-luiz/styles"
+                ]
+              },
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "./src/assets",
+                  "output": "/assets"
+                },
+                { 
+                  "glob": "**/*", 
+                  "input": "./src/environments/mercado-luiz/assets", 
+                  "output": "assets/" 
+                }
+              ]
             }
           }
         },
@@ -71,7 +121,13 @@
           "configurations": {
             "production": {
               "browserTarget": "white-label:build:production"
-            }
+            },
+            "mercado-pedro": {
+              "browserTarget": "app:build:mercado-pedro"
+            },
+            "mercado-luiz": {
+              "browserTarget": "app:build:mercado-luiz"
+            }                                  
           }
         },
         "extract-i18n": {
