@@ -123,10 +123,10 @@
               "browserTarget": "white-label:build:production"
             },
             "mercado-pedro": {
-              "browserTarget": "app:build:mercado-pedro"
+              "browserTarget": "white-label:build:mercado-pedro"
             },
             "mercado-luiz": {
-              "browserTarget": "app:build:mercado-luiz"
+              "browserTarget": "white-label:build:mercado-luiz"
             }                                  
           }
         },
