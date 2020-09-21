@@ -1,7 +1,8 @@
 import { EnvironmentMercadoModel } from './environment.mercado.model';
 export const environment: EnvironmentMercadoModel = {
-  nome: "Mercado João",
-  baseref: "http://localhost:8000/joao",
+  nome: "Mercado Luiz",
+  baseref: "http://localhost:8000/luiz",
+  production: false,
   cores: {
     "primary": "#E27D60",
     "secondary": "#85DCB",
