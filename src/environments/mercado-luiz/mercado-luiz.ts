@@ -5,7 +5,7 @@ export const environment: EnvironmentMercadoModel = {
   production: false,
   cores: {
     "primary": "#E27D60",
-    "secondary": "#85DCB",
+    "secondary": "#85DCBA",
     "tertiary": "#E8A87C",
     "quarternary": "#C38D9E",
     "pentenary": "#41B3A3"

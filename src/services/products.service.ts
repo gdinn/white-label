@@ -15,7 +15,7 @@ export class ProductsService {
     private http: HttpClient
   ) {}
 
-  getAllProducts(): Observable<any> {
-    return this.http.get<ResponseModel<ProductModel>>(this.baseref)
+  getAllProducts(): Observable<ResponseModel<ProductModel[]>> {
+    return this.http.get<ResponseModel<ProductModel[]>>(this.baseref)
   }
 }

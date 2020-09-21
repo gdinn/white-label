@@ -34,6 +34,9 @@
           },
           "configurations": {
             "mercado-pedro": {
+              "styles": [
+                "src/styles.scss"
+              ],              
               "fileReplacements": [
                 {
                   "replace": "./src/environments/mercado/environment.ts",
@@ -59,6 +62,9 @@
               ]
             },
             "mercado-pedro-prod": {
+              "styles": [
+                "src/styles.scss"
+              ],              
               "fileReplacements": [
                 {
                   "replace": "./src/environments/mercado/environment.ts",
@@ -104,6 +110,9 @@
               ]              
             },            
             "mercado-luiz": {
+              "styles": [
+                "src/styles.scss"
+              ],              
               "fileReplacements": [
                 {
                   "replace": "./src/environments/mercado/environment.ts",
@@ -129,6 +138,9 @@
               ]
             },
             "mercado-luiz-prod": {
+              "styles": [
+                "src/styles.scss"
+              ],              
               "fileReplacements": [
                 {
                   "replace": "./src/environments/mercado/environment.ts",

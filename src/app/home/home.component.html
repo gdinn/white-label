@@ -1,0 +1,20 @@
+<div class="wrapper-content"> 
+  <div class="wrapper-tittle">
+    <h1>{{env.nome}}</h1>
+    <img src="assets/logo.png" alt="Logo do supermercado mostrando um desenho ilustrativo da loja">
+  </div>
+  <div class="wrapper-products"> 
+    <div class="product" *ngFor="let product of products$ | async">
+      <div class="wrapper-content">
+        <img [src]="product.image">
+        <div class="wrapper-description">
+          <label class="product-name">{{product.name}}</label>
+          <label class="product-price">{{product.preco}}</label>
+        </div>
+      </div>
+      <div class="wrapper-cart">
+        <label>Adcicionar</label>
+      </div>      
+    </div>
+  </div>
+</div>

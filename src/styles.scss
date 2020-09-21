@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+:root {
+  @each $color, $code in $colors { 
+    --color-#{'' + $color}: #{$code};
+    --color-#{'' + $color}-rgb: #{rgba($code, 1)};
+  }
+}
+
+@each $color, $code in $colors {
+  .color-#{"" + $color} {    
+    --color-base: var(--color-#{"" + $color}) !important;
+    --color-base-rgb: var(--color-#{"" + $color}-rgb) !important;
+  }
+  .color-#{"" + $color} {
+    color: var(--color-#{"" + $color});
+  }
+}

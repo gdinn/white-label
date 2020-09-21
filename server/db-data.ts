@@ -1,37 +1,60 @@
 export const PRODUCTS_LUIZ: any = [
   {
-    name: "Sabão em pó",
-    image: "https://formulasgratis.com/wp-content/uploads/2019/08/formula-sab%C3%A3o-em-po.jpg"
+    name: "Suco",
+    image: "http://localhost:8000/public/suco.png",
+    preco: "R$ 5,00"
   },
   {
-    name: "Alcool em gel",
-    image: "https://drauziovarella.uol.com.br/wp-content/uploads/2020/03/202003_drauzio_materia_coronavirus-alcool_AndreyPopov_1000x563.jpg"
+    name: "Cascão",
+    image: "http://localhost:8000/public/cascao.png",
+    preco: "R$ 6,00"
   },
   {
-    name: "Saco de lixo",
-    image: ""
+    name: "Docinhos",
+    image: "http://localhost:8000/public/docinhos.png",
+    preco: "R$ 4,99"
   },
   {
-    name: "Vassoura",
-    image: ""
-  }  
+    name: "Banana/kg",
+    image: "http://localhost:8000/public/banana.png",
+    preco: "R$ 2,99"
+  },
+  {
+    name: "Laranja/kg",
+    image: "http://localhost:8000/public/laranja.png",
+    preco: "R$ 4,99"
+  },
+  {
+    name: "Melancia/kg",
+    image: "http://localhost:8000/public/melancia.png",
+    preco: "R$ 3,49"
+  }       
 ]
 
 export const PRODUCTS_PEDRO: any = [
   {
-    name: "Sabão liquido",
-    image: "https://cdn4.ecycle.com.br/cache/images/2019-11/50-650-sabao-liquido.jpg"
+    name: "Cafe",
+    image: "http://localhost:8000/public/cafe.png",
+    preco: "R$ 3,50"
   },
   {
-    name: "Alcool",
-    image: "https://biosan.net.br/wp-content/uploads/2019/12/produto-limpeza-alcool-etilico-70.png"
+    name: "Chá",
+    image: "http://localhost:8000/public/cha.png",
+    preco: "R$ 3,00"
   },
   {
-    name: "Filtro de aspirador de pó",
-    image: ""
+    name: "Hamburger",
+    image: "http://localhost:8000/public/hamburger.png",
+    preco: "R$ 12,99"
   },
   {
-    name: "Rodo",
-    image: ""
-  }  
+    name: "Pizza",
+    image: "http://localhost:8000/public/pizza.png",
+    preco: "R$ 13,00"
+  },
+  {
+    name: "Sorvete",
+    image: "http://localhost:8000/public/sorvete.png",
+    preco: "R$ 5,49"
+  }   
 ]
