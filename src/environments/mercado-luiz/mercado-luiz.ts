@@ -1,4 +1,4 @@
-import { EnvironmentMercadoModel } from './environment.mercado.model';
+import { EnvironmentMercadoModel } from '../mercado/environment.mercado.model';
 export const environment: EnvironmentMercadoModel = {
   nome: "Mercado Luiz",
   baseref: "http://localhost:8000/luiz",

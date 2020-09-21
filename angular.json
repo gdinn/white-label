@@ -33,11 +33,53 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "mercado-pedro": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "./src/environments/mercado/environment.ts",
+                  "with": "./src/environments/mercado-pedro/mercado-pedro.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "./src/environments/mercado-pedro/styles"
+                ]
+              },
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "./src/assets",
+                  "output": "/assets"
+                },
+                { 
+                  "glob": "**/*", 
+                  "input": "./src/environments/mercado-pedro/assets", 
+                  "output": "assets/" 
+                }
+              ]
+            },
+            "mercado-pedro-prod": {
+              "fileReplacements": [
+                {
+                  "replace": "./src/environments/mercado/environment.ts",
+                  "with": "./src/environments/mercado-pedro/mercado-pedro.prod.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "./src/environments/mercado-pedro/styles"
+                ]
+              },
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "./src/assets",
+                  "output": "/assets"
+                },
+                { 
+                  "glob": "**/*", 
+                  "input": "./src/environments/mercado-pedro/assets", 
+                  "output": "assets/" 
                 }
               ],
               "optimization": true,
@@ -59,38 +101,13 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
-            },
-            "mercado-pedro": {
-              "fileReplacements": [
-                {
-                  "replace": "./src/environments/environment.ts",
-                  "with": "./src/environments/environment.mercado-pedro.ts"
-                }
-              ],
-              "stylePreprocessorOptions": {
-                "includePaths": [
-                  "./src/environments/mercado-pedro/styles"
-                ]
-              },
-              "assets": [
-                {
-                  "glob": "**/*",
-                  "input": "./src/assets",
-                  "output": "/assets"
-                },
-                { 
-                  "glob": "**/*", 
-                  "input": "./src/environments/mercado-pedro/assets", 
-                  "output": "assets/" 
-                }
-              ]
-            },
+              ]              
+            },            
             "mercado-luiz": {
               "fileReplacements": [
                 {
-                  "replace": "./src/environments/environment.ts",
-                  "with": "./src/environments/environment.mercado-luiz.ts"
+                  "replace": "./src/environments/mercado/environment.ts",
+                  "with": "./src/environments/mercado-luiz/mercado-luiz.ts"
                 }
               ],
               "stylePreprocessorOptions": {
@@ -110,24 +127,72 @@
                   "output": "assets/" 
                 }
               ]
+            },
+            "mercado-luiz-prod": {
+              "fileReplacements": [
+                {
+                  "replace": "./src/environments/mercado/environment.ts",
+                  "with": "./src/environments/mercado-luiz/mercado-luiz.prod.ts"
+                }
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "./src/environments/mercado-luiz/styles"
+                ]
+              },
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "./src/assets",
+                  "output": "/assets"
+                },
+                { 
+                  "glob": "**/*", 
+                  "input": "./src/environments/mercado-luiz/assets", 
+                  "output": "assets/" 
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]              
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "white-label:build"
+            "browserTarget": "white-label:build:mercado-pedro"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "white-label:build:production"
-            },
             "mercado-pedro": {
               "browserTarget": "white-label:build:mercado-pedro"
             },
+            "mercado-pedro-prod": {
+              "browserTarget": "white-label:build:mercado-pedro-prod"
+            },            
             "mercado-luiz": {
               "browserTarget": "white-label:build:mercado-luiz"
-            }                                  
+            },
+            "mercado-luiz-prod": {
+              "browserTarget": "white-label:build:mercado-luiz-prod"
+            }            
           }
         },
         "extract-i18n": {
