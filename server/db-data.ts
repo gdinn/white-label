@@ -1,60 +1,65 @@
 export const PRODUCTS_LUIZ: any = [
   {
-    name: "Suco",
-    image: "http://localhost:8000/public/suco.png",
+    name: "Torta",
+    image: "http://localhost:8000/public/01_Mercado_Luiz.png",
     preco: "R$ 5,00"
   },
   {
-    name: "Cascão",
-    image: "http://localhost:8000/public/cascao.png",
-    preco: "R$ 6,00"
+    name: "Pão fatiado",
+    image: "http://localhost:8000/public/02_Mercado_Luiz.png",
+    preco: "R$ 6,99"
   },
   {
-    name: "Docinhos",
-    image: "http://localhost:8000/public/docinhos.png",
-    preco: "R$ 4,99"
+    name: "Abacaxi/kg",
+    image: "http://localhost:8000/public/03_Mercado_Luiz.png",
+    preco: "R$ 3,99"
   },
   {
     name: "Banana/kg",
-    image: "http://localhost:8000/public/banana.png",
+    image: "http://localhost:8000/public/04_Mercado_Luiz.png",
     preco: "R$ 2,99"
   },
   {
-    name: "Laranja/kg",
-    image: "http://localhost:8000/public/laranja.png",
-    preco: "R$ 4,99"
+    name: "Limão/kg",
+    image: "http://localhost:8000/public/05_Mercado_Luiz.png",
+    preco: "R$ 2,99"
   },
   {
-    name: "Melancia/kg",
-    image: "http://localhost:8000/public/melancia.png",
+    name: "Maça/kg",
+    image: "http://localhost:8000/public/06_Mercado_Luiz.png",
     preco: "R$ 3,49"
   }       
 ]
 
 export const PRODUCTS_PEDRO: any = [
   {
-    name: "Cafe",
-    image: "http://localhost:8000/public/cafe.png",
-    preco: "R$ 3,50"
+    name: "Croissant",
+    image: "http://localhost:8000/public/01_Mercado_Pedro.png",
+    preco: "R$ 5,99"
   },
   {
-    name: "Chá",
-    image: "http://localhost:8000/public/cha.png",
-    preco: "R$ 3,00"
+    name: "Docinho X",
+    image: "http://localhost:8000/public/02_Mercado_Pedro.png",
+    preco: "R$ 2,99"
   },
   {
-    name: "Hamburger",
-    image: "http://localhost:8000/public/hamburger.png",
-    preco: "R$ 12,99"
+    name: "Cajuzinho",
+    image: "http://localhost:8000/public/03_Mercado_Pedro.png",
+    preco: "R$ 2,99"
   },
   {
-    name: "Pizza",
-    image: "http://localhost:8000/public/pizza.png",
-    preco: "R$ 13,00"
+    name: "Rocambole",
+    image: "http://localhost:8000/public/04_Mercado_Pedro.png",
+    preco: "R$ 7,99"
   },
   {
-    name: "Sorvete",
-    image: "http://localhost:8000/public/sorvete.png",
+    name: "Torta doce",
+    image: "http://localhost:8000/public/05_Mercado_Pedro.png",
     preco: "R$ 5,49"
-  }   
+  },
+  {
+    name: "Donnut",
+    image: "http://localhost:8000/public/06_Mercado_Pedro.png",
+    preco: "R$ 4,49"
+  }  
 ]

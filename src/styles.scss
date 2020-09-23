@@ -16,3 +16,17 @@
     color: var(--color-#{"" + $color});
   }
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/font/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
+* {
+  font-family: 'Roboto';
+}
+
+body{
+  margin: 0px;
+  background-color: #f0f5f7;
+}

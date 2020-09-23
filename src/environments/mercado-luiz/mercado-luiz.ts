@@ -4,10 +4,10 @@ export const environment: EnvironmentMercadoModel = {
   baseref: "http://localhost:8000/luiz",
   production: false,
   cores: {
-    "primary": "#E27D60",
-    "secondary": "#85DCBA",
-    "tertiary": "#E8A87C",
-    "quarternary": "#C38D9E",
-    "pentenary": "#41B3A3"
+    "primary": "#bffe00",
+    "secondary": "#f5ffd1",
+    "tertiary": "#658b9d",
+    "quarternary": "#5656d7",
+    "pentenary": "#bffe00"
   }
 };
