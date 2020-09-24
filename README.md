@@ -1,27 +1,30 @@
-# WhiteLabel
+# Aplicações white-label: Uma abordagem sem *ngIf
+Esse é o repositório correspondente a apresentação ocorrida no Meetup AngularSP acontecido no dia 24/09/2020. [Para acessar a apresentação clique nesse link](https://speakerdeck.com/gdinn/aplicacoes-white-label-sem-ngif).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## Antes de iniciar
+Para rodar o projeto no seu computador será necessário ter o NodeJS e a CLI do Angular instalados.  
+[Para informações c/ relação a instalação da CLI Angular clique nesse link ](https://cli.angular.io/).  
+[Para informações c/ relação a instalação do NodeJS clique nesse link ](https://nodejs.org/en/).  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instalação das dependências do Node.
+````shell
+npm install
+````
 
-## Code scaffolding
+## Iniciando a aplicação Front-End
+Rode `ng serve` para iniciar a aplicação web com a label padrão. Para especificar uma label passe o nome dela com a flag `--configuration`. Por exemplo:  
+````shell
+ng serve --configuration=mercado-luiz
+````
+E, alternativamente, para o mercado-pedro:
+````shell
+ng serve --configuration=mercado-pedro
+````
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Iniciando a aplicação Back-End
+````shell
+npm run server
+````
+  
+Para mais detalhes com relação ao funcionamento, [acesse o link dos slides](https://speakerdeck.com/gdinn/aplicacoes-white-label-sem-ngif). Nele falo com mais detalhes sobre como a aplicação foi construída.
