@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'home';
 .wrapper-header {
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
       margin: 5px;
       margin-bottom: 18px;
       border-radius: 10px;      
-      width: calc(50% - 40px);
+      /* width definido via env */
       background-color: #fff;
       .product-content{
         display: flex;
@@ -65,6 +65,7 @@
           h1,h2{            
             padding: 0px;
             margin: 0px;
+            text-align: center;
           }          
           h1 {
             color: var(--color-tertiary);

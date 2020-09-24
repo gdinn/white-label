@@ -1,0 +1,10 @@
+.wrapper-content {
+  .wrapper-products {
+    .product {
+      width: calc(100% - 40px);
+    }
+    .product:nth-child(3n), .product:nth-child(3n-1){
+      width: calc(50% - 40px);
+    }
+  }
+}

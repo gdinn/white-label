@@ -35,7 +35,7 @@
           "configurations": {
             "mercado-pedro": {
               "styles": [
-                "src/styles.scss"
+                "src/styles.scss"                
               ],              
               "fileReplacements": [
                 {

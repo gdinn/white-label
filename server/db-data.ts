@@ -38,7 +38,7 @@ export const PRODUCTS_PEDRO: any = [
     preco: "R$ 5,99"
   },
   {
-    name: "Docinho X",
+    name: "Tortinha",
     image: "http://localhost:8000/public/02_Mercado_Pedro.png",
     preco: "R$ 2,99"
   },
